@@ -1,24 +1,30 @@
-package ru.itpark.Rates;
+package ru.itpark.rate;
 
 public class BasicRate {
+    private long id;
     private String name;
     private int subscriptionFee;
     private String internet;
     private String feature;
     private int period;
 
-    public static String Unlimited = "Безлимит";
+    public static final String Unlimited = "Безлимит";
 
-    public BasicRate(String name, int subscriptionFee, String internet, String feature, int period) {
+    public BasicRate(long id, String name, int subscriptionFee, String internet, String feature, int period) {
+        this.id = id;
         this.name = name;
         this.subscriptionFee = subscriptionFee;
         this.internet = internet;
         this.feature = feature;
         this.period = period;
     }
+    public long getId() {
+        return id;
+    }
 
-
-
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
