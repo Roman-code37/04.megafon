@@ -1,6 +1,6 @@
-package ru.itpark.rate;
+package ru.itpark.tariff;
 
-public class BasicRate {
+public class BasicTariff {
     private long id;
     private String name;
     private int subscriptionFee;
@@ -10,7 +10,7 @@ public class BasicRate {
 
     public static final String Unlimited = "Безлимит";
 
-    public BasicRate(long id, String name, int subscriptionFee, String internet, String feature, int period) {
+    public BasicTariff(long id, String name, int subscriptionFee, String internet, String feature, int period) {
         this.id = id;
         this.name = name;
         this.subscriptionFee = subscriptionFee;

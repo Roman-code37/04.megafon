@@ -1,12 +1,12 @@
 package ru.itpark;
 
-import ru.itpark.rate.RestTariff;
-import ru.itpark.rate.TariffForModem;
-import ru.itpark.rate.TureOnTariff;
+import ru.itpark.tariff.RestTariff;
+import ru.itpark.tariff.TariffForModem;
+import ru.itpark.tariff.TurnOnTariff;
 
 public class Main {
     public static void main(String[] args) {
-        TureOnTariff speak = new TureOnTariff(1,
+        TurnOnTariff speak = new TurnOnTariff(1,
                 "Говори",
                 300,
                 "5",
